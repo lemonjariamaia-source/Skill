@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+.img1 > img {
+    width:100%
+}
+header > .header {
+    padding: 16px 16px 0px 16px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+}
+
+header > .header > h1 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+header > .header > h1 .tagline {
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+}
+
+header >.header >  button {
+    width: 140px;
+    height: 48px;
+    color: white;
+    background-color: #1b277c;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    border-radius: 28px;
+    border: none;
+   
+    
+    
+    
+}
+
+main {
+    padding: 16px;
+}
+
+.budjet {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 38px;
+}
+
+.budjet > h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.budjet > p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #83869A;
+}
+.budjet > button {
+    width: 167px;
+    height: 56px;
+    border-radius: 31.5px;   
+    color: white;
+    background:linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    border: none;
+}
+.card-header  {
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 10px;
+    /*margin-bottom: 40px;*/
+}
+.card-header > h2 {
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 28px 24px 28px 32px;
+}
+
+i {
+    position:absolute;
+    top: -30px;
+}
+.cards {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 16px;
+    
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+section > .cards > .text  > h1 {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 8px;
+}
+section > .cards > .text > p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #83869A; 
+    
+}
+section > .cards > .text > button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    border: none;
+    background-color: transparent;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 24px;
+    background-color: #FFFFFF;
+    padding: 56px 28px 32px 28px;
+    align-items: start;
+    
+}
+footer {
+    width: 100%;
+    height: 120px;
+    background: #13183F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:  80px;
+}
+
+footer > button {
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    border-radius: 28px;
+    width: 140px;
+    height: 48px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    border: none;
+}
+
+footer > h2 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+
+}
+
+.img2 > img, .img3 > img {
+    display: none;
+}
+
+@media  screen and (min-width:768px) {
+    .img1 > img {
+        display: none;
+    }
+    .img2 > img {
+        display: none;    
+    }
+    body {
+        background-image: url(./image-hero-tablet@2x.png);
+        background-repeat: no-repeat;
+        background-size: 640px 640px;
+        background-position: top -70px right -280px;
+    }
+    .cards {
+        width: 90%;
+        margin-top: 140px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    main .budjet {
+        margin-left: 40px;
+        width: 50%;
+    }
+    .header {
+        padding: 20px 40px;
+    }
+    footer {
+        padding: 20px 40px;
+    }
+
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+    
+    .cards  {
+        grid-template-columns:  auto auto;
+        margin: 40px;
+        margin-top: 201px;
+    }
+    .card-header {
+        height: 100%;
+        padding-top: 65px;
+        width: 340px;
+    }
+    .text {
+        width: 340px;
+    }
+}
+@media  screen and (min-width:1440px) {
+.img1 > img {
+    display: none;
+}
+    .img2 > img { display:none;
+    }
+    
+    body {
+        background-image: url(./image-hero-desktop@2x.png);
+        background-repeat: no-repeat;
+        background-size: 900px;
+        background-position: top -70px right -280px;
+    }
+    
+    .cards  {
+        grid-template-columns:  auto auto auto;
+        
+    }
+    .text {
+        border-radius: 15px;
+    }
+    .cards {
+        width: 80%;
+        margin-bottom: 120px;
+        margin-top: 340px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .budjet {
+        margin-left: 80px;
+    }
+    .header {
+        padding: 40px 80px;
+    }
+    footer {
+        padding: 20px 80px
+    }
+
+    
+}
+
+
+

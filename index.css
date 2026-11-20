@@ -198,11 +198,12 @@ footer > h2 {
         background-position: top -70px right -280px;
     }
     .cards {
-        width: 90%;
+        width: 80%;
         margin-top: 140px;
+        padding: 10px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     main .budjet {
         margin-left: 40px;
@@ -218,7 +219,7 @@ footer > h2 {
     
     main {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         padding-right: 0px;
     }
     
@@ -258,7 +259,7 @@ footer > h2 {
         border-radius: 15px;
     }
     .cards {
-        width: 80%;
+        width: 90%;
         margin-bottom: 120px;
         margin-top: 340px;
         flex-direction: row;
